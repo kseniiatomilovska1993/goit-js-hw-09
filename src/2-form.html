@@ -4,21 +4,28 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>Feedback Form</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
 
     <main>
-      <ul>
-        <li><a href="./1-gallery.html">Gallery</a></li>
-        <li><a href="./2-form.html">Form</a></li>
-      </ul>
+      <form class="feedback-form" autocomplete="off">
+        <label>
+          Email
+          <input type="email" name="email" autofocus />
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="8"></textarea>
+        </label>
+        <button type="submit">Submit</button>
+      </form>
     </main>
 
     <load src="./partials/footer.html" />
 
-    <script type="module" src="./main.js"></script>
+    <script type="module" src="./2-form.js"></script>
   </body>
 </html>
